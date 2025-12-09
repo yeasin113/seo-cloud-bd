@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Premium Tools</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#f6f6f6;
+    }
+
+    /* HEADER */
+    header{
+        background:#ffffff;
+        padding:15px 25px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        position:sticky;
+        top:0;
+        z-index:10;
+    }
+
+    .logo h2{
+        color:#2ecc71;
+        font-size:24px;
+    }
+
+    .menu{
+        display:flex;
+        gap:20px;
+    }
+
+    .menu a{
+        text-decoration:none;
+        color:#333;
+        font-weight:600;
+    }
+
+    .auth{
+        display:flex;
+        gap:10px;
+    }
+
+    .auth button{
+        padding:8px 18px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-weight:bold;
+    }
+
+    .login{ background:#e3f7ff; }
+    .signup{ background:#2ecc71; color:white; }
+
+    /* MOBILE NAV HIDE */
+    @media(max-width:768px){
+        .menu{
+            display:none;
+        }
+    }
+
+    /* TITLE */
+    .section-title{
+        text-align:center;
+        margin-top:40px;
+        font-size:30px;
+        color:#2bb34a;
+        font-weight:bold;
+        padding:0 15px;
+    }
+
+    .subtitle{
+        text-align:center;
+        margin-top:10px;
+        font-size:16px;
+        padding:0 15px;
+    }
+
+    /* TOOL CARDS */
+    .tools-container{
+        max-width:1200px;
+        margin:40px auto;
+        padding:0 20px;
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap:25px;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        border-radius:12px;
+        box-shadow:0 3px 8px rgba(0,0,0,0.08);
+        text-align:center;
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+        box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .card img{
+        width:60px;
+        height:60px;
+        object-fit:contain;
+    }
+
+    .card h3{
+        margin-top:12px;
+        font-size:18px;
+        color:#333;
+    }
+
+    .price{
+        font-size:20px;
+        font-weight:bold;
+        margin:10px 0;
+        color:#555;
+    }
+
+    .buy-btn{
+        background:#2ecc71;
+        color:white;
+        padding:10px 18px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        font-size:15px;
+        font-weight:bold;
+    }
+
+    .text{
+        text-align: center;
+        font-size: small;
+        padding:10px 18px;
+        
+    }
+
+    .buy-btn:hover{
+        background:#29b965;
+    }
+    body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #0a4d3c;
+    color: #fff;
+}
+
+.top-bar {
+    background: #d9f5d9;
+    color: #336644;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.main-box {
+    padding: 30px 20px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d2f0d2;
+}
+
+.contact {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.sub-title {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fb-links {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.payment-box {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.payment-box img {
+    width: 80px;
+    height: auto;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    .payment-box {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h2>SEO CLOUD</h2>
+    </div>
+
+    <div class="menu">
+        <a href="#">Policy</a>
+        <a href="#">Single Tools</a>
+        <a href="#">Tools Limit</a>
+        
+    </div>
+
+    <div class="auth">
+        <button class="login">Login</button>
+        <button class="signup">Sign Up</button>
+    </div>
+</header>
+
+
+<h1 class="section-title">→ Our Premium Tools</h1>
+<p class="subtitle">Powerful SEO & AI tools crafted to help you grow your online presence.</p>
+
+
+<div class="tools-container">
+
+    <div class="card">
+        <img src="semrush.png" alt="">
+        <h3>semrush</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="blackbox.png" alt="">
+        <h3>blackbox ai</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="ryne.png" alt="">
+        <h3>ryne ai</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="iask.png" alt="">
+        <h3>iask pro</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>blackbox</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>ryne ai</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>iask pro</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>video express</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>pikbest</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>envato ai</h3>
+        <p class="price">450 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>Indexification</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>issk ai</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>ideogram</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>piclumen</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="4.jpeg" alt="">
+        <h3>heygen</h3>
+        <p class="price">650 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>backlink Repository</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>spain rewriter</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>chatgpt plus</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>Quillbot</h3>
+        <p class="price">300 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>vidiq</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>Storyblock</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>envato</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>lovepik</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>freepik</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>flying resarch</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="veo3" alt="">
+        <h3>veo3</h3>
+        <p class="price">800 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="1.jpeg" alt="">
+        <h3>hailuo ai</h3>
+        <p class="price">1599 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>elevenlab</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="2.jpeg" alt="">
+        <h3>digen ai</h3>
+        <p class="price">600 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="3.jpeg" alt="">
+        <h3>runwayml</h3>
+        <p class="price">1000 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>openart</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>Katteb</h3>
+        <p class="price">300 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="videoexpress.png" alt="">
+        <h3>envato elements</h3>
+        <p class="price">400 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images" alt="">
+        <h3>Iconscout</h3>
+        <p class="price">350 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="5.jpeg" alt="">
+        <h3>Leonardo ai</h3>
+        <p class="price">500 tk</p>
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+</div>
+
+ <!-- Top Notice -->
+    <div class="top-bar">
+        🌿 Updated with trusted tools chosen by SEO professionals worldwide 🌿
+    </div>
+
+    <!-- Main Section -->
+    <section class="main-box">
+
+        <h1 class="title">seocloudbd</h1>
+
+        <p class="desc">
+            Affordable group-buy SEO & marketing tools. <br>
+            Simple one-click access, trusted by freelancers & agencies.
+        </p>
+
+        <!-- Contact -->
+        <div class="contact">
+            <p>📞 +880 1914873399</p>
+            <p>📧 seocloudbd.com@gmail.com</p>
+        </div>
+
+        <!-- FB Links -->
+        <h2 class="sub-title">Follow Us on Facebook</h2>
+
+        <div class="fb-links">
+            <p>📘 seocloudbd.com</p>
+            <p>📘 Digital Zone</p>
+        </div>
+
+        <!-- Payment Logos -->
+        <div class="payment-box">
+            <img src="Bkash-Logo.jpeg" alt="">
+            <img src="Nogad-Logo.jpeg" alt="">
+            <img src="Rocaket-Logo.jpeg" alt="">
+            <img src="citytuch.png" alt="">
+            <img src="surecash.png" alt="">
+            <img src="upay.png" alt="">
+
+            <img src="brackbank.png" alt="">
+            <img src="dbbl.jfif" alt="">
+            <img src="Visa-Logo.jpeg" alt="">
+            <img src="Master-Card.jpeg" alt="">
+            <img src="Visa-Logo.jpeg" alt="">
+            <img src="brackbank.png" alt="">
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>

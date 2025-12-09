@@ -1,6 +1,6 @@
 .slider {
   width: 100%;
-  max-width: 900px; /* Desktop limit */
+  max-width: 400px; /* Desktop limit */
   aspect-ratio: 16/9; /* Automatically height adjust */
   overflow: hidden;
   margin: auto;
@@ -40,4 +40,5 @@
 
   75%  { transform: translateX(-300%); }
   100% { transform: translateX(-300%); }
+
 }
